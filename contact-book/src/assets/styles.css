@@ -1,0 +1,70 @@
+h1
+{
+    text-align: center;
+    margin: 20px 0 55px 0;
+    color: #fff;
+}
+
+.contactSearch
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    margin: 0 0 10px 0;
+}
+.contactSearch input
+{
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 5px;
+    background: #b5b5b5;
+}
+.contactList
+{
+    overflow: hidden;
+    width: 100%;
+}
+.contactList ul
+{
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid;
+    padding: 10px 30px 30px 30px;
+    list-style: none;
+    border-radius: 10px;
+    border-color: #fff;
+}
+.contactList ul li
+{
+    border: 1px solid #bc9400;
+    padding: 5px;
+}
+.contactList ul li a
+{
+    text-decoration: none;
+}
+.addNewConatct
+{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    background: #017e50;
+    color: #fff;
+    text-decoration: none;
+}
+.addNewConatct:hover
+{
+    background: #7e6501;
+}
+.addNewBtnContainer
+{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin: 25px 0 0 0;
+}
+body
+{
+    background: #342b00;
+}
+
