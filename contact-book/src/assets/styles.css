@@ -57,7 +57,7 @@ h1
 }
 .addNewConatct:hover,.addContactForm form button:hover, 
 .contactDet button:hover, .editContDet form button:hover, 
-.editContDet form a:hover
+.editContDet form a:hover, .contactDet a:hover
 {
     background: #7e6501;
 }
