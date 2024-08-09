@@ -1,12 +1,16 @@
 <template>
-    <div v-if="contact">
+
+  <div class="contactDetContainer">
+    <div v-if="contact" class="contactDet">
       <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
       <p>Email: {{ contact.email }}</p>
       <router-link :to="{ name: 'EditContact', params: { id: contact.id } }">Edit</router-link>
       <button @click="deleteContact">Delete</button>
       <router-link to="/">Back to Contact List</router-link>
     </div>
-  </template>
+  </div>
+
+ </template>
   
   <script>
   import { ref } from 'vue'

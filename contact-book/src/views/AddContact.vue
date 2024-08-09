@@ -1,13 +1,25 @@
 <template>
-    <div>
-      <h1>Add New Contact</h1>
-      <form @submit.prevent="addContact">
-        <input v-model="firstName" placeholder="First Name" required />
-        <input v-model="lastName" placeholder="Last Name" required />
-        <input v-model="email" placeholder="Email" required />
-        <button type="submit">Add</button>
-      </form>
-      <router-link to="/">Back to Contact List</router-link>
+
+    <h1>Add New Contact</h1>
+    <div class="mainContainer">
+      
+      <div class="addContactForm">
+        <form @submit.prevent="addContact" >
+          <input v-model="firstName" placeholder="First Name" required />
+          <input v-model="lastName" placeholder="Last Name" required />
+          <input v-model="email" placeholder="Email" required />
+          <button type="submit">Add</button>
+
+          <router-link to="/">Back to Contact List</router-link>
+        </form>
+
+        
+
+      </div>
+      
+
+      
+
     </div>
   </template>
   

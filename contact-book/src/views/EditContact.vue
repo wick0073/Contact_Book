@@ -1,15 +1,20 @@
 <template>
-    <div v-if="contact">
+
+  <div class="editContDetContainer">
+    <div v-if="contact" class="editContDet">
       <h1>Edit Contact</h1>
       <form @submit.prevent="updateContact">
         <input v-model="contact.firstName" placeholder="First Name" required />
         <input v-model="contact.lastName" placeholder="Last Name" required />
         <input v-model="contact.email" placeholder="Email" required />
         <button type="submit">Update</button>
+        <router-link :to="{ name: 'ContactDetails', params: { id: contact.id } }">Cancel</router-link>
       </form>
-      <router-link :to="{ name: 'ContactDetails', params: { id: contact.id } }">Cancel</router-link>
+      
     </div>
-  </template>
+  </div>
+
+</template>
   
   <script>
   import { ref } from 'vue'
